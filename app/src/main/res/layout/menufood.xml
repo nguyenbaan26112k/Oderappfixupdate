@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/backgroundmenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/the_pizza_company"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:layout_below="@+id/logo"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/textmenu"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textmenu"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/textmenu"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_350sdp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/menu"
+        />
+    <Button
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/menu"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonoder"
+        android:text="Oder"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_15sdp"
+        android:id="@+id/oder"
+        />
+
+</RelativeLayout>
